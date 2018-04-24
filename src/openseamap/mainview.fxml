@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="491.0" prefWidth="345.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="openseamap.FXMLDocumentController">
+   <children>
+      <MenuBar prefHeight="57.0" prefWidth="345.0" style="-fx-background-color: #2878e0;" stylesheets="openseamap/src/style.css" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false">
+            <items>
+                  <Menu mnemonicParsing="false" text="Ansichten">
+                    <items>
+                      <MenuItem mnemonicParsing="false" text="Seezeichen" />
+                        <MenuItem mnemonicParsing="false" text="Häfen" />
+                        <MenuItem mnemonicParsing="false" text="Pegel" />
+                    </items>
+                  </Menu>
+              <MenuItem mnemonicParsing="false" text="Hilfe" />
+            </items>
+               <graphic>
+                  <ImageView fitHeight="46.0" fitWidth="51.0">
+                     <image>
+                        <Image url="@navicon.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Canvas id="map" fx:id="map" height="434.0" layoutY="57.0" width="345.0" AnchorPane.topAnchor="57.0" />
+   </children>
+</AnchorPane>
